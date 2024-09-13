@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #074331;
+    color: #ea4b75;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    height: 80px;
+    background-color: #0c392c;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    color : #ea4b75;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.purple {
+    color: #08B2E3;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ea4b75;
+}
+
+ul li a:hover {
+    color: rgb(154, 154, 236);
+    font-size: 1.01rem;
+}
+
+#element {
+    color: #08B2E3;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(69, 51, 172);
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.secondSection .box {
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    background-color: white;
+    height: 93px;
+    width: 1px;
+    margin: 0 80px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+}
+
+footer {
+    background-color: #042c21;
+    color : #ea4b75;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer>div {
+    width: 233px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 15px;
+}
+
+.leftSection .btn {
+    background-color: #CE6C47;
+    color: white;
+    margin: 50px 5px;
+    padding: 5px 10px 5px 3px;
+    border-radius: 7px;
+}
+
+footer div ul li{
+    list-style: none;
+}
+
+.footer-fourth{
+    font-size: 18px;
+}
+
+footer div ul li a{
+    color : rgb(79, 76, 76);
+}
