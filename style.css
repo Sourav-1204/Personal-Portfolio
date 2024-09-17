@@ -1,9 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+html,body {
+    width : 100% ;
+    height : 100%;
     background-color: #074331;
     color: #ea4b75;
     font-family: 'Poppins', sans-serif;
@@ -13,8 +16,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    align-items: center;
-    height: 80px;
+    height : 80px;
+    width : 100%;
     background-color: #0c392c;
 }
 
@@ -71,6 +74,8 @@ ul li a:hover {
 }
 
 .secondSection {
+    display : flex;
+    justify-content: space-around;
     max-width: 80vw;
     margin: auto;
     height: 80vh;
