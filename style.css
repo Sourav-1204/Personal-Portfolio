@@ -8,8 +8,8 @@ html,
 body{
     width : 100% ;
     height : 100%;
-    background-color: #074331;
-    color: #ea4b75;
+    background-color: #1b1c70;
+    color: #3fbb60;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
@@ -26,7 +26,7 @@ nav {
     align-items: center;
     height : 80px;
     width : 100%;
-    background-color: #0c392c;
+    background-image: linear-gradient(0deg,#0d0d3f,#16166b);
 }
 
 nav ul {
@@ -71,7 +71,7 @@ nav ul li {
 }
 
 .purple {
-    color: #08B2E3;
+    color: #a6d01e;
 }
 
 ul li a {
@@ -85,7 +85,7 @@ ul li a:hover {
 }
 
 #element {
-    color: #08B2E3;
+    color: #a6d01e;
 }
 
 .secondSection {
@@ -112,7 +112,7 @@ main hr {
 
 .text-gray {
     margin-left : 0.2rem;
-    color: #245181;
+    color: #53a087;
     font-size: 1.2rem;;
 }
 
@@ -131,7 +131,7 @@ main hr {
     padding-top: 0.5rem;
     text-align: center; 
     color : #31985d;
-    border : 0.1rem solid #37c2a9;
+    border : 0.15rem solid #37c2a9;
     border-radius: 4%;
 }
 
@@ -144,8 +144,8 @@ main hr {
 }
 
 footer {
-    background-color: #042c21;
-    color : #ea4b75;
+    background-image: linear-gradient(180deg,#131347,#2e2e76);
+    color : #927bcd;
     position: relative;
 }
 
@@ -162,16 +162,18 @@ footer {
 
 footer .footer-rights {
     text-align: center;
-    color: gray;
+    color: rgb(130, 77, 120);
     padding: 15px;
 }
 
 .leftSection .btn {
-    background-color: #CE6C47;
+    background-image: linear-gradient(0deg,#b74bb5,#472c45);
     color: white;
+    font-size: 15px;;
     margin: 50px 5px;
-    padding: 5px 10px 5px 3px;
-    border-radius: 7px;
+    padding: 10px 10px 10px 10px;
+    border : 2px solid #752569;
+    border-radius : 10px;
 }
 
 footer div ul li{
@@ -191,16 +193,21 @@ footer div ul li a{
    margin : 0.8rem 1.5rem;
    background-color: #37c2a9;
 }
+.menu-icon{
+    display : none;
+}
 
 @media (width <= 600px){
    
     nav {
+       display : flex;
+       justify-content: start;
        width: 100%;
+       height : 65px;
     }
 
     nav .left{
-        margin : 0;
-        padding : 0;
+        font-size: 1.2rem;
     }
 
     .firstSection {
@@ -212,6 +219,7 @@ footer div ul li a{
     .leftSection{
         width : 100%;
         padding : 1.6rem;
+        font-size: 1.75rem;
     }
     .rightSection{
         width : 100%;
@@ -247,7 +255,7 @@ footer div ul li a{
         padding-top: 0.5rem;
         text-align: center; 
         color : #31985d;
-        border : 0.1rem solid #37c2a9;
+        border : 0.2rem solid #37c2a9;
         border-radius: 4%;
     }
     .footer {
@@ -260,9 +268,7 @@ footer div ul li a{
     .footer .footer-first{
         font-size: 1.3rem;
     }
-    .footer-first h3{
-        margin : 10px 10px;
-    }
+
     .footer .footer-second{
         margin : 1rem 0 0 1rem;
     }
@@ -277,9 +283,22 @@ footer div ul li a{
 
     .footer .footer-fourth ul{
         display : flex;
+        font-size: 25px;
     }
 
     .footer-fourth ul li{
         margin : 0.5rem 0.5rem 0 0;
+    }
+
+    .leftSection .btn{
+        padding : 18px;
+        margin : 20px 5px;
+        font-size: 13px;
+    }
+
+    .menu-icon{
+        display : inline;
+        margin-left : 120px;
+        font-size: 22px;
     }
 }
