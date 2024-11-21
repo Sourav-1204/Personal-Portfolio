@@ -5,28 +5,52 @@
 }
 
 html,
-body{
-    width : 100% ;
-    height : 100%;
+body {
+    width: 100%;
+    height: 100%;
     background-color: #1b1c70;
     color: #3fbb60;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+
 /* body::-webkit-scrollbar { 
     display: none;
 } */
 
-header{
-    width : 100%;
+header {
+    width: 100%;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height : 80px;
-    width : 100%;
-    background-image: linear-gradient(0deg,#0d0d3f,#16166b);
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(0deg, #0d0d3f, #16166b);
+}
+
+.cursor {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 10;
+    background: transparent;
+    border-radius: 50%;
+    border: 1.5px solid #e9e959;
+    mix-blend-mode: difference;
+    transition: all ease-out .2s ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-cursor{
+    height : 7px;
+    width : 7px;
+    background-color: greenyellow;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -37,13 +61,13 @@ nav ul {
 nav ul li {
     list-style: none;
     margin: 0 23px;
-    color : #ea4b75;
-    height : inherit;
+    color: #ea4b75;
+    height: inherit;
 }
 
 .left {
     font-size: 1.5rem;
-    margin : 1rem;
+    margin: 1rem;
 }
 
 .firstSection {
@@ -52,6 +76,7 @@ nav ul li {
     align-items: center;
     margin: 80px 0;
 }
+
 /* .firstSection>div{
     width: 30%;
 } */
@@ -59,16 +84,16 @@ nav ul li {
 .leftSection {
     font-size: 2rem;
     padding-left: 13%;
-    width : 50%;
+    width: 50%;
 }
 
-.rightSection{
-    width : 50%;
+.rightSection {
+    width: 50%;
 }
 
-.rightSection img{
-    margin : 0 5rem 0 5rem;
-    width : 50%;
+.rightSection img {
+    margin: 0 5rem 0 5rem;
+    width: 50%;
 }
 
 .purple {
@@ -78,7 +103,7 @@ nav ul li {
 ul li a {
     text-decoration: none;
     color: #ea4b75;
-    height : inherit;
+    height: inherit;
 }
 
 ul li a:hover {
@@ -91,7 +116,7 @@ ul li a:hover {
 }
 
 .secondSection {
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: start;
     max-width: 80vw;
@@ -108,14 +133,15 @@ main hr {
 
 .secondSection .work-expo {
     font-size: 1.2rem;
-    width : 100vw;
+    width: 100vw;
     line-height: 2rem;
 }
 
 .text-gray {
-    margin-left : 0.2rem;
+    margin-left: 0.2rem;
     color: #53a087;
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
+    ;
 }
 
 .image-top {
@@ -126,33 +152,33 @@ main hr {
 }
 
 .vertical-title {
-    height : 14rem;
-    margin : 2rem;
+    height: 14rem;
+    margin: 2rem;
     width: 10rem;
     font-size: 1rem;
     padding-top: 0.5rem;
-    text-align: center; 
-    color : #31985d;
-    border : 0.15rem solid #37c2a9;
+    text-align: center;
+    color: #31985d;
+    border: 0.15rem solid #37c2a9;
     border-radius: 4%;
 }
 
 .vertical-desc {
     text-align: left;
-    padding : 0.8rem;
+    padding: 0.8rem;
     color: gray;
     width: 150px;
     font-size: 0.6rem;
 }
 
 footer {
-    background-image: linear-gradient(180deg,#131347,#2e2e76);
-    color : #927bcd;
+    background-image: linear-gradient(180deg, #131347, #2e2e76);
+    color: #927bcd;
     position: relative;
 }
 
 .footer {
-    width : 100vw;
+    width: 100vw;
     display: flex;
     padding: 23px 122px;
     justify-content: space-evenly;
@@ -169,71 +195,79 @@ footer .footer-rights {
 }
 
 .leftSection .btn {
-    background-image: linear-gradient(0deg,#b74bb5,#472c45);
+    background-image: linear-gradient(0deg, #b74bb5, #472c45);
     color: white;
-    font-size: 15px;;
+    font-size: 15px;
+    ;
     margin: 50px 5px;
     padding: 10px 10px 10px 10px;
-    border : 2px solid #752569;
-    border-radius : 10px;
+    border: 2px solid #752569;
+    border-radius: 10px;
 }
 
-footer div ul li{
+footer div ul li {
     list-style: none;
 }
 
-.footer-fourth{
+.footer-fourth {
     font-size: 18px;
 }
 
-footer div ul li a{
-    color : rgb(166, 166, 47);
+footer div ul li a {
+    color: rgb(166, 166, 47);
 }
-.separator{
-   height : 0.1rem;
-   width : 7rem;
-   margin : 0.8rem 1.5rem;
-   background-color: #37c2a9;
-}
-.sidebar{
-    position : fixed;
-    top : 0;
-    right : 0;
-    display : none;
-    width : 60vw;
-    flex-direction: column;
-    height : 100vh;
-    z-index : 100;
-    background-image: linear-gradient(0deg,#04042f,#262680);
-}
-.sidebar >li{
-    margin-left : 30px;
-    padding : 0;
-} 
 
-.sidebar >a{
-      padding : 10px 10px 10px 10px;
+.separator {
+    height: 0.1rem;
+    width: 7rem;
+    margin: 0.8rem 1.5rem;
+    background-color: #37c2a9;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 60vw;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 100;
+    background-image: linear-gradient(0deg, #04042f, #262680);
+}
+
+.sidebar>li {
+    margin-left: 30px;
+    padding: 0;
+}
+
+.sidebar>a {
+    padding: 10px 10px 10px 10px;
+}
+
 .hide-menu {
-    margin-top : 20px ;
+    margin-top: 20px;
     font-size: 27px;
 }
-.menu-icon{
-    display : none;
+
+.menu-icon {
+    display: none;
 }
 
-@media (width <= 600px){
-   
+@media (width <=600px) {
+
     nav {
-       display : flex;
-       justify-content: space-between;
-       width: 100%;
-       height : 65px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 65px;
     }
-    .hedeonmobile{
+
+    .hideonmobile {
         display: none;
     }
-    nav .left{
+
+    nav .left {
         font-size: 1.2rem;
     }
 
@@ -243,83 +277,98 @@ footer div ul li a{
         /* flex-direction: column; */
         flex-wrap: wrap;
     }
-    .leftSection{
-        width : 100%;
-        padding : 1.6rem;
+
+    .leftSection {
+        width: 100%;
+        padding: 1.6rem;
         font-size: 1.75rem;
     }
-    .rightSection{
-        width : 100%;
+
+    .rightSection {
+        width: 100%;
     }
-    .rightSection img{
-        width : 90vw;
-        margin : 1rem 1.5rem 1rem 1.5rem;
+
+    .rightSection img {
+        width: 90vw;
+        margin: 1rem 1.5rem 1rem 1.5rem;
     }
+
     .secondSection {
-        display : flex;
+        display: flex;
         justify-content: center;
         align-items: start;
         max-width: 80vw;
         margin: 3rem 8rem;
         flex-wrap: wrap;
     }
+
     .secondSection .work-expo {
         font-size: 1.1rem;
     }
-    main hr{
-        width : 80%;
-        margin : auto;
+
+    main hr {
+        width: 80%;
+        margin: auto;
         background-color: #81d9a7;
     }
+
     .vertical-title {
-        height : 14rem;
-        margin : 2rem 0 1rem 0;
+        height: 14rem;
+        margin: 2rem 0 1rem 0;
         width: 10rem;
         font-size: 1rem;
         padding-top: 0.5rem;
-        text-align: center; 
-        color : #31985d;
-        border : 0.2rem solid #37c2a9;
+        text-align: center;
+        color: #31985d;
+        border: 0.2rem solid #37c2a9;
         border-radius: 4%;
     }
+
     .footer {
-        width : 100vw;
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        padding: 23px 0 23px 15px;;
+        padding: 23px 0 23px 15px;
+        ;
         justify-content: space-evenly;
     }
-    .footer .footer-first{
+
+    .footer .footer-first {
         font-size: 1.3rem;
     }
 
-    .footer .footer-second{
-        margin : 1rem 0 0 1rem;
+    .footer .footer-second {
+        margin: 1rem 0 0 1rem;
     }
 
-    .footer .footer-third{
-        margin : 1rem 0 0 1rem;
+    .footer .footer-third {
+        margin: 1rem 0 0 1rem;
     }
 
-    .footer .footer-fourth{
-        margin : 1rem 0 0 1rem;
+    .footer .footer-fourth {
+        margin: 1rem 0 0 1rem;
     }
 
-    .footer .footer-fourth ul{
-        display : flex;
+    .footer .footer-fourth ul {
+        display: flex;
         font-size: 27px;
     }
 
-    .footer-fourth ul li{
-        margin : 0.5rem 1.2rem 0 0;
+    .footer-fourth ul li {
+        margin: 0.5rem 1.2rem 0 0;
     }
 
-    .leftSection .btn{
-        padding : 18px;
-        margin : 20px 5px;
+    .leftSection .btn {
+        padding: 18px;
+        margin: 20px 5px;
         font-size: 13px;
     }
-    .menu-icon{
-        display : block;
+
+    .menu-icon {
+        display: block;
+    }
+
+    .cursor {
+        display: none;
     }
 }
